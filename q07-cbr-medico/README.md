@@ -4,7 +4,7 @@ Questão 7 da Lista 2 (AB2), IA PPGI 2026.2, prof. Evandro Costa.
 
 > Desenvolver um sistema que receba sintomas informados pelo paciente, compare-os com uma base de casos previamente armazenados e implemente as etapas do ciclo de Raciocínio Baseado em Casos: Recuperação (Retrieve), Reutilização (Reuse), Revisão (Revise) e Retenção (Retain).
 
-> **Aviso:** os casos são **fictícios** e o sistema é um protótipo acadêmico. Ele **não substitui avaliação médica** e as sugestões de tratamento são genéricas, para ilustrar o funcionamento.
+> **Aviso:** os casos são **fictícios** e o sistema é um protótipo acadêmico. Ele **não substitui avaliação médica** e as sugestões de tratamento são genéricas, para ilustrar o funcionamento. 
 
 ## Como rodar
 
