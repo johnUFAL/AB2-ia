@@ -1,0 +1,21 @@
+id,faixa_etaria,duracao,sintomas,diagnostico,tratamento
+C01,Adulto,ate_3_dias,febre;tosse;dor_muscular;dor_de_garganta;coriza;dor_de_cabeca,Gripe,Repouso e hidratação; antitérmico ou analgésico de venda livre apenas conforme orientação de profissional de saúde
+C02,Jovem,ate_3_dias,febre;tosse;coriza;dor_de_garganta,Gripe,Repouso e hidratação; antitérmico ou analgésico de venda livre apenas conforme orientação de profissional de saúde
+C03,Idoso,4_a_7_dias,febre;tosse;dor_muscular;dor_de_cabeca;coriza,Gripe,Repouso e hidratação; antitérmico ou analgésico de venda livre apenas conforme orientação de profissional de saúde
+C04,Jovem,4_a_7_dias,febre;dor_de_garganta;coriza;tosse,Gripe,Repouso e hidratação; antitérmico ou analgésico de venda livre apenas conforme orientação de profissional de saúde
+C05,Adulto,ate_3_dias,febre;dor_atras_dos_olhos;dor_muscular;dor_de_cabeca;nausea,Dengue,Hidratação oral e repouso; acompanhamento médico imediato; evitar anti-inflamatórios e AAS sem orientação médica
+C06,Jovem,ate_3_dias,febre;manchas_na_pele;dor_muscular;dor_atras_dos_olhos,Dengue,Hidratação oral e repouso; acompanhamento médico imediato; evitar anti-inflamatórios e AAS sem orientação médica
+C07,Adulto,4_a_7_dias,febre;manchas_na_pele;nausea;dor_abdominal;dor_atras_dos_olhos,Dengue,Hidratação oral e repouso; acompanhamento médico imediato; evitar anti-inflamatórios e AAS sem orientação médica
+C08,Idoso,4_a_7_dias,febre;dor_muscular;dor_de_cabeca;dor_atras_dos_olhos;manchas_na_pele,Dengue,Hidratação oral e repouso; acompanhamento médico imediato; evitar anti-inflamatórios e AAS sem orientação médica
+C09,Idoso,mais_7_dias,febre;tosse;falta_de_ar;dor_no_peito;dor_muscular,Pneumonia,Avaliação médica imediata; antibiótico e possível internação conforme a gravidade
+C10,Adulto,4_a_7_dias,febre;tosse;falta_de_ar;dor_no_peito,Pneumonia,Avaliação médica imediata; antibiótico e possível internação conforme a gravidade
+C11,Idoso,4_a_7_dias,febre;tosse;falta_de_ar;dor_de_cabeca,Pneumonia,Avaliação médica imediata; antibiótico e possível internação conforme a gravidade
+C12,Adulto,mais_7_dias,febre;tosse;dor_no_peito;falta_de_ar;dor_muscular,Pneumonia,Avaliação médica imediata; antibiótico e possível internação conforme a gravidade
+C13,Adulto,ate_3_dias,dor_de_cabeca;nausea;sensibilidade_luz,Enxaqueca,Repouso em ambiente escuro e silencioso; analgésico ou tratamento específico conforme orientação médica
+C14,Jovem,ate_3_dias,dor_de_cabeca;sensibilidade_luz;nausea,Enxaqueca,Repouso em ambiente escuro e silencioso; analgésico ou tratamento específico conforme orientação médica
+C15,Adulto,mais_7_dias,dor_de_cabeca;sensibilidade_luz;nausea;dor_atras_dos_olhos,Enxaqueca,Repouso em ambiente escuro e silencioso; analgésico ou tratamento específico conforme orientação médica
+C16,Idoso,4_a_7_dias,dor_de_cabeca;sensibilidade_luz,Enxaqueca,Repouso em ambiente escuro e silencioso; analgésico ou tratamento específico conforme orientação médica
+C17,Adulto,mais_7_dias,dor_abdominal;azia;nausea,Gastrite,Dieta leve; evitar álcool e cigarro e anti-inflamatórios; medicamento para acidez somente por prescrição médica
+C18,Idoso,mais_7_dias,dor_abdominal;azia,Gastrite,Dieta leve; evitar álcool e cigarro e anti-inflamatórios; medicamento para acidez somente por prescrição médica
+C19,Jovem,4_a_7_dias,dor_abdominal;azia;nausea,Gastrite,Dieta leve; evitar álcool e cigarro e anti-inflamatórios; medicamento para acidez somente por prescrição médica
+C20,Adulto,4_a_7_dias,dor_abdominal;nausea;azia,Gastrite,Dieta leve; evitar álcool e cigarro e anti-inflamatórios; medicamento para acidez somente por prescrição médica
