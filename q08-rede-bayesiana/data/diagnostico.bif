@@ -1,0 +1,182 @@
+network unknown {
+}
+variable Azia {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable Coriza {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable Doenca {
+    type discrete [ 5 ] { Gripe, Dengue, Pneumonia, Enxaqueca, Gastrite };
+}
+variable DorAbdominal {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable DorAtrasDosOlhos {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable DorDeCabeca {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable DorDeGarganta {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable DorMuscular {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable DorNoPeito {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable Duracao {
+    type discrete [ 3 ] { ate_3_dias, 4_a_7_dias, mais_7_dias };
+}
+variable Faixa {
+    type discrete [ 3 ] { Jovem, Adulto, Idoso };
+}
+variable FaltaDeAr {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable Febre {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable ManchasNaPele {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable Nausea {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable SensibilidadeLuz {
+    type discrete [ 2 ] { Nao, Sim };
+}
+variable Tosse {
+    type discrete [ 2 ] { Nao, Sim };
+}
+probability ( Azia | Doenca ) {
+    ( Gripe ) 0.98, 0.02;
+    ( Dengue ) 0.98, 0.02;
+    ( Pneumonia ) 0.98, 0.02;
+    ( Enxaqueca ) 0.95, 0.05;
+    ( Gastrite ) 0.15000000000000002, 0.85;
+
+}
+probability ( Coriza | Doenca ) {
+    ( Gripe ) 0.25, 0.75;
+    ( Dengue ) 0.95, 0.05;
+    ( Pneumonia ) 0.9, 0.1;
+    ( Enxaqueca ) 0.95, 0.05;
+    ( Gastrite ) 0.98, 0.02;
+
+}
+probability ( Doenca | Faixa ) {
+    ( Jovem ) 0.3, 0.2, 0.05, 0.25, 0.2;
+    ( Adulto ) 0.25, 0.2, 0.1, 0.25, 0.2;
+    ( Idoso ) 0.2, 0.1, 0.3, 0.1, 0.3;
+
+}
+probability ( DorAbdominal | Doenca ) {
+    ( Gripe ) 0.95, 0.05;
+    ( Dengue ) 0.75, 0.25;
+    ( Pneumonia ) 0.95, 0.05;
+    ( Enxaqueca ) 0.95, 0.05;
+    ( Gastrite ) 0.09999999999999998, 0.9;
+
+}
+probability ( DorAtrasDosOlhos | Doenca ) {
+    ( Gripe ) 0.9, 0.1;
+    ( Dengue ) 0.30000000000000004, 0.7;
+    ( Pneumonia ) 0.95, 0.05;
+    ( Enxaqueca ) 0.65, 0.35;
+    ( Gastrite ) 0.98, 0.02;
+
+}
+probability ( DorDeCabeca | Doenca ) {
+    ( Gripe ) 0.4, 0.6;
+    ( Dengue ) 0.4, 0.6;
+    ( Pneumonia ) 0.7, 0.3;
+    ( Enxaqueca ) 0.050000000000000044, 0.95;
+    ( Gastrite ) 0.75, 0.25;
+
+}
+probability ( DorDeGarganta | Doenca ) {
+    ( Gripe ) 0.4, 0.6;
+    ( Dengue ) 0.85, 0.15;
+    ( Pneumonia ) 0.8, 0.2;
+    ( Enxaqueca ) 0.95, 0.05;
+    ( Gastrite ) 0.95, 0.05;
+
+}
+probability ( DorMuscular | Doenca ) {
+    ( Gripe ) 0.30000000000000004, 0.7;
+    ( Dengue ) 0.25, 0.75;
+    ( Pneumonia ) 0.6, 0.4;
+    ( Enxaqueca ) 0.8, 0.2;
+    ( Gastrite ) 0.95, 0.05;
+
+}
+probability ( DorNoPeito | Doenca ) {
+    ( Gripe ) 0.95, 0.05;
+    ( Dengue ) 0.95, 0.05;
+    ( Pneumonia ) 0.4, 0.6;
+    ( Enxaqueca ) 0.95, 0.05;
+    ( Gastrite ) 0.85, 0.15;
+
+}
+probability ( Duracao | Doenca ) {
+    ( Gripe ) 0.7, 0.25, 0.05;
+    ( Dengue ) 0.6, 0.35, 0.05;
+    ( Pneumonia ) 0.1, 0.35, 0.55;
+    ( Enxaqueca ) 0.6, 0.2, 0.2;
+    ( Gastrite ) 0.05, 0.25, 0.7;
+
+}
+probability ( Faixa ) {
+    table 0.3, 0.45, 0.25 ;
+}
+probability ( FaltaDeAr | Doenca ) {
+    ( Gripe ) 0.95, 0.05;
+    ( Dengue ) 0.95, 0.05;
+    ( Pneumonia ) 0.19999999999999996, 0.8;
+    ( Enxaqueca ) 0.97, 0.03;
+    ( Gastrite ) 0.98, 0.02;
+
+}
+probability ( Febre | Doenca ) {
+    ( Gripe ) 0.15000000000000002, 0.85;
+    ( Dengue ) 0.09999999999999998, 0.9;
+    ( Pneumonia ) 0.15000000000000002, 0.85;
+    ( Enxaqueca ) 0.9, 0.1;
+    ( Gastrite ) 0.9, 0.1;
+
+}
+probability ( ManchasNaPele | Doenca ) {
+    ( Gripe ) 0.98, 0.02;
+    ( Dengue ) 0.6, 0.4;
+    ( Pneumonia ) 0.98, 0.02;
+    ( Enxaqueca ) 0.98, 0.02;
+    ( Gastrite ) 0.98, 0.02;
+
+}
+probability ( Nausea | Doenca ) {
+    ( Gripe ) 0.85, 0.15;
+    ( Dengue ) 0.55, 0.45;
+    ( Pneumonia ) 0.85, 0.15;
+    ( Enxaqueca ) 0.4, 0.6;
+    ( Gastrite ) 0.44999999999999996, 0.55;
+
+}
+probability ( SensibilidadeLuz | Doenca ) {
+    ( Gripe ) 0.95, 0.05;
+    ( Dengue ) 0.95, 0.05;
+    ( Pneumonia ) 0.95, 0.05;
+    ( Enxaqueca ) 0.19999999999999996, 0.8;
+    ( Gastrite ) 0.95, 0.05;
+
+}
+probability ( Tosse | Doenca ) {
+    ( Gripe ) 0.19999999999999996, 0.8;
+    ( Dengue ) 0.85, 0.15;
+    ( Pneumonia ) 0.09999999999999998, 0.9;
+    ( Enxaqueca ) 0.9, 0.1;
+    ( Gastrite ) 0.9, 0.1;
+
+}
