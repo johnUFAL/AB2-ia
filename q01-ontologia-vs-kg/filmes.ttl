@@ -6,7 +6,6 @@
 
 <http://exemplo.org/filmes> a owl:Ontology .
 
-# TBox: esquema e semântica
 :Pessoa  a owl:Class .
 :Diretor a owl:Class ;
          rdfs:subClassOf :Pessoa .
@@ -34,7 +33,6 @@
                   owl:hasValue :Acao
               ] .
 
-# ABox: indivíduos e fatos
 :Acao a :Genero .
 
 :LanaWachowski a :Diretor ;

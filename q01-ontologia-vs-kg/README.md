@@ -1,6 +1,6 @@
 # Q1: Ontologias vs. Grafos de Conhecimento
 
-Questão 1 da Lista 2 (AB2), IA PPGI 2026.2, prof. Evandro Costa.
+Questão 1 da Lista 2, IA PPGI 2026.2, prof. Evandro Costa.
 
 > "Faça um comparativo entre essas duas abordagens (Sistemas baseados em Ontologias e Sistemas baseados em Grafos de Conhecimento), considerando um exemplo de aplicação de sua escolha. Mostre, com a ajuda de um exemplo, como se faz um mapeamento de uma ontologia em um grafo de conhecimento."
 
@@ -8,30 +8,28 @@ Questão 1 da Lista 2 (AB2), IA PPGI 2026.2, prof. Evandro Costa.
 
 Este trabalho compara sistemas baseados em ontologias e grafos de conhecimento usando **recomendação de filmes** como domínio. Também apresenta um exemplo de ontologia OWL em Turtle e o mapeamento de seus indivíduos e relações para um *property graph* no Neo4j.
 
-Os artefatos estão em [`filmes.ttl`](filmes.ttl) e [`grafo.cypher`](grafo.cypher).
-
+Há dois arquivos com funções diferentes: [`filmes.ttl`](filmes.ttl) é a ontologia em RDF/Turtle, para abrir no Protégé; [`grafo.cypher`](grafo.cypher) é o exemplo do grafo em Cypher, a linguagem nativa de consulta do Neo4j. **Não é preciso instalar extensão RDF para executar o arquivo `.cypher` no Neo4j.
 ## Como rodar
 
 ### Ontologia
 
 1. Abra `filmes.ttl` no [Protégé](https://protege.stanford.edu/).
-2. Selecione um *reasoner* OWL (por exemplo, HermiT) e inicie-o.
-3. Consulte os tipos inferidos de `Matrix`. O reasoner deve classificá-lo também como `FilmeDeAcao`, embora esse tipo não esteja declarado diretamente no indivíduo.
-
-O exemplo usa OWL 2 e não exige dependências Python.
+2. Selecione um *reasoner* OWL e inicie.
+3. Consulte os tipos inferidos de `Matrix`. O reasoner deve classificar também como `FilmeDeAcao`, embora esse tipo não esteja declarado diretamente no indivíduo.
 
 ### Grafo de conhecimento
 
-1. Abra o Neo4j Browser e conecte-se a um banco.
-2. Execute o conteúdo de `grafo.cypher` em ordem: primeiro a seção **Carga**, depois a seção **Inferência explicitada**.
-3. Na seção **Consultas**, execute as consultas para conferir os nós, as relações e o label `FilmeDeAcao` atribuído pela regra.
+1. Inicie um banco Neo4j e abra o Neo4j Browser conectado a ele.
+2. No editor de consultas, copie e execute somente os comandos da seção **Carga** do arquivo `grafo.cypher`. O resultado deve mostrar o pequeno grafo criado.
+3. Copie e execute o comando da seção **Inferência explicitada**.
+4. Execute as consultas da seção **Consultas**, uma de cada vez, para conferir os dados e o label `FilmeDeAcao`.
 
-O exemplo pressupõe um banco de demonstração vazio. Os comandos `MERGE` permitem repeti-los sem criar nós ou relações duplicados.
+Os comandos estão escritos em Cypher normal; basta colar no editor e pressionar **Run**. O exemplo pressupõe um banco de demonstração vazio. Os comandos `MERGE` permitem repetir a carga sem criar nós ou relações duplicados.
 
 ## Decisões tomadas (e por quê)
 
 - **Domínio: filmes.** É familiar e ilustra classes, hierarquia, relações e inferência.
-- **Destino do mapeamento: property graph do Neo4j.** Esse formato facilita visualizar entidades e relações e é reutilizável em trabalhos relacionados. Uma alternativa seria mapear a ontologia para RDF e consultá-la em uma *triple store*; RDF preserva diretamente a forma de triplas, enquanto o exemplo abaixo usa labels, propriedades e tipos de relacionamento do Neo4j.
+- **Destino do mapeamento: property graph do Neo4j.** Esse formato facilita visualizar entidades e relações e é reutilizável em trabalhos relacionados. Uma alternativa seria mapear a ontologia para RDF e consultar em uma *triple store*; RDF preserva diretamente a forma de triplas, enquanto o exemplo abaixo usa labels, propriedades e tipos de relacionamento do Neo4j.
 - **Recorte pequeno.** O exemplo é suficiente para mostrar o mapeamento e o que não é preservado automaticamente, sem pretender modelar todo o domínio de filmes.
 - **Semântica não é automática no property graph.** O banco armazena os fatos e executa as consultas; as regras OWL precisam ser traduzidas ou executadas por uma camada de raciocínio separada.
 
@@ -48,7 +46,7 @@ O exemplo pressupõe um banco de demonstração vazio. Os comandos `MERGE` permi
 | `domain` / `range` | Restrição ou documentação da aplicação | Não são inferidos automaticamente pelo modelo de property graph. |
 | Restrições e axiomas, como `equivalentClass` com `hasValue` | Regra, consulta de inferência/materialização ou validação externa | Não têm equivalente semântico automático no mapeamento mostrado. |
 
-O mapeamento é uma escolha de representação, não uma conversão sem perdas: o property graph mantém os fatos selecionados, mas não carrega por si só toda a semântica lógica da ontologia.
+O mapeamento é uma escolha de representação, não uma conversão sem perdas, o property graph mantém os fatos selecionados, mas não carrega por si só toda a semântica lógica da ontologia.
 
 ## Resultados
 
@@ -64,7 +62,6 @@ O mapeamento é uma escolha de representação, não uma conversão sem perdas: 
 | Escala e custo | O custo do raciocínio depende dos axiomas, do reasoner e dos dados; inferência pode se tornar cara. | Bancos de grafos são apropriados para consultas relacionais e travessias em grandes volumes, mas desempenho depende do banco, dos índices e das consultas. |
 | Ferramentas | Protégé, OWL API, HermiT e Pellet. | Neo4j/Cypher para property graphs; RDF stores e SPARQL para grafos RDF. |
 
-As abordagens não são necessariamente concorrentes. Uma ontologia pode fornecer o vocabulário e as restrições conceituais que orientam um grafo de conhecimento; o grafo pode armazenar e conectar os dados em escala. A integração exata depende do formato e das ferramentas escolhidas.
 
 ### Aplicação: recomendação de filmes
 
