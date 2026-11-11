@@ -1,0 +1,43 @@
+@prefix :     <http://exemplo.org/filmes#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://exemplo.org/filmes> a owl:Ontology .
+
+:Pessoa  a owl:Class .
+:Diretor a owl:Class ;
+         rdfs:subClassOf :Pessoa .
+:Filme   a owl:Class .
+:Genero  a owl:Class .
+
+:dirigiu a owl:ObjectProperty ;
+         rdfs:domain :Diretor ;
+         rdfs:range :Filme ;
+         owl:inverseOf :dirigidoPor .
+:dirigidoPor a owl:ObjectProperty .
+
+:temGenero a owl:ObjectProperty ;
+           rdfs:domain :Filme ;
+           rdfs:range :Genero .
+
+:anoLancamento a owl:DatatypeProperty ;
+               rdfs:domain :Filme ;
+               rdfs:range xsd:integer .
+
+:FilmeDeAcao a owl:Class ;
+              owl:equivalentClass [
+                  a owl:Restriction ;
+                  owl:onProperty :temGenero ;
+                  owl:hasValue :Acao
+              ] .
+
+:Acao a :Genero .
+
+:LanaWachowski a :Diretor ;
+               :dirigiu :Matrix .
+
+:Matrix a :Filme ;
+        :temGenero :Acao ;
+        :anoLancamento 1999 .
