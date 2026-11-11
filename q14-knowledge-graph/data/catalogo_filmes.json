@@ -1,0 +1,431 @@
+{
+  "filmes": [
+    {
+      "id": "poderoso_chefao",
+      "titulo": "O Poderoso Chefão",
+      "ano": 1972,
+      "generos": [
+        "Drama",
+        "Crime"
+      ],
+      "diretor": "francis_coppola",
+      "atores": [
+        "marlon_brando",
+        "al_pacino"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "pulp_fiction",
+      "titulo": "Pulp Fiction",
+      "ano": 1994,
+      "generos": [
+        "Crime",
+        "Drama"
+      ],
+      "diretor": "quentin_tarantino",
+      "atores": [
+        "samuel_l_jackson",
+        "john_travolta"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior18"
+    },
+    {
+      "id": "silencio_dos_inocentes",
+      "titulo": "O Silêncio dos Inocentes",
+      "ano": 1991,
+      "generos": [
+        "Suspense",
+        "Terror",
+        "Crime"
+      ],
+      "diretor": "jonathan_demme",
+      "atores": [
+        "jodie_foster",
+        "anthony_hopkins"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "o_iluminado",
+      "titulo": "O Iluminado",
+      "ano": 1980,
+      "generos": [
+        "Terror",
+        "Suspense"
+      ],
+      "diretor": "stanley_kubrick",
+      "atores": [
+        "jack_nicholson"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "matrix",
+      "titulo": "Matrix",
+      "ano": 1999,
+      "generos": [
+        "Acao",
+        "FiccaoCientifica"
+      ],
+      "diretor": "lana_wachowski",
+      "atores": [
+        "keanu_reeves",
+        "carrie_anne_moss"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "interestelar",
+      "titulo": "Interestelar",
+      "ano": 2014,
+      "generos": [
+        "FiccaoCientifica",
+        "Drama"
+      ],
+      "diretor": "christopher_nolan",
+      "atores": [
+        "matthew_mcconaughey",
+        "anne_hathaway"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior12"
+    },
+    {
+      "id": "jurassic_park",
+      "titulo": "Jurassic Park",
+      "ano": 1993,
+      "generos": [
+        "FiccaoCientifica",
+        "Acao",
+        "Aventura"
+      ],
+      "diretor": "steven_spielberg",
+      "atores": [
+        "sam_neill"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior12"
+    },
+    {
+      "id": "toy_story",
+      "titulo": "Toy Story",
+      "ano": 1995,
+      "generos": [
+        "Animacao",
+        "Comedia"
+      ],
+      "diretor": "john_lasseter",
+      "atores": [
+        "tom_hanks"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Livre"
+    },
+    {
+      "id": "up",
+      "titulo": "Up - Altas Aventuras",
+      "ano": 2009,
+      "generos": [
+        "Animacao",
+        "Aventura"
+      ],
+      "diretor": "pete_docter",
+      "atores": [
+        "ed_asner"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Livre"
+    },
+    {
+      "id": "titanic",
+      "titulo": "Titanic",
+      "ano": 1997,
+      "generos": [
+        "Romance",
+        "Drama"
+      ],
+      "diretor": "james_cameron",
+      "atores": [
+        "leonardo_dicaprio",
+        "kate_winslet"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior12"
+    },
+    {
+      "id": "la_la_land",
+      "titulo": "La La Land",
+      "ano": 2016,
+      "generos": [
+        "Musical",
+        "Romance"
+      ],
+      "diretor": "damien_chazelle",
+      "atores": [
+        "ryan_gosling",
+        "emma_stone"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior12"
+    },
+    {
+      "id": "se_beber_nao_case",
+      "titulo": "Se Beber, Não Case!",
+      "ano": 2009,
+      "generos": [
+        "Comedia"
+      ],
+      "diretor": "todd_phillips",
+      "atores": [
+        "bradley_cooper"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "parasita",
+      "titulo": "Parasita",
+      "ano": 2019,
+      "generos": [
+        "Suspense",
+        "Drama"
+      ],
+      "diretor": "bong_joon_ho",
+      "atores": [
+        "song_kang_ho"
+      ],
+      "idioma": "Coreano",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "gladiador",
+      "titulo": "Gladiador",
+      "ano": 2000,
+      "generos": [
+        "Acao",
+        "Drama"
+      ],
+      "diretor": "ridley_scott",
+      "atores": [
+        "russell_crowe"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior16"
+    },
+    {
+      "id": "forrest_gump",
+      "titulo": "Forrest Gump",
+      "ano": 1994,
+      "generos": [
+        "Drama",
+        "Romance"
+      ],
+      "diretor": "robert_zemeckis",
+      "atores": [
+        "tom_hanks"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior12"
+    },
+    {
+      "id": "clube_da_luta",
+      "titulo": "Clube da Luta",
+      "ano": 1999,
+      "generos": [
+        "Suspense",
+        "Drama"
+      ],
+      "diretor": "david_fincher",
+      "atores": [
+        "brad_pitt",
+        "edward_norton"
+      ],
+      "idioma": "Ingles",
+      "classificacao": "Maior18"
+    },
+    {
+      "id": "amelie",
+      "titulo": "Amélie",
+      "ano": 2001,
+      "generos": [
+        "Comedia",
+        "Romance"
+      ],
+      "diretor": "jean_pierre_jeunet",
+      "atores": [
+        "audrey_tautou"
+      ],
+      "idioma": "Frances",
+      "classificacao": "Maior12"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "ana",
+      "nome": "Ana",
+      "idade": 28,
+      "gostos": [
+        "Terror",
+        "Suspense",
+        "FiccaoCientifica"
+      ],
+      "diretores": [
+        "christopher_nolan"
+      ],
+      "atores": [],
+      "viu": [
+        "matrix",
+        "interestelar"
+      ]
+    },
+    {
+      "id": "bruno",
+      "nome": "Bruno",
+      "idade": 12,
+      "gostos": [
+        "Animacao",
+        "Comedia"
+      ],
+      "diretores": [],
+      "atores": [
+        "tom_hanks"
+      ],
+      "viu": [
+        "toy_story"
+      ]
+    },
+    {
+      "id": "carla",
+      "nome": "Carla",
+      "idade": 35,
+      "gostos": [
+        "Romance",
+        "Musical"
+      ],
+      "diretores": [],
+      "atores": [
+        "ryan_gosling"
+      ],
+      "viu": [
+        "titanic"
+      ]
+    },
+    {
+      "id": "diego",
+      "nome": "Diego",
+      "idade": 20,
+      "gostos": [
+        "Crime",
+        "Drama",
+        "Suspense"
+      ],
+      "diretores": [
+        "quentin_tarantino"
+      ],
+      "atores": [],
+      "viu": [
+        "poderoso_chefao"
+      ]
+    }
+  ],
+  "pessoas": {
+    "francis_coppola": "Francis Ford Coppola",
+    "marlon_brando": "Marlon Brando",
+    "al_pacino": "Al Pacino",
+    "quentin_tarantino": "Quentin Tarantino",
+    "samuel_l_jackson": "Samuel L. Jackson",
+    "john_travolta": "John Travolta",
+    "jonathan_demme": "Jonathan Demme",
+    "jodie_foster": "Jodie Foster",
+    "anthony_hopkins": "Anthony Hopkins",
+    "stanley_kubrick": "Stanley Kubrick",
+    "jack_nicholson": "Jack Nicholson",
+    "lana_wachowski": "Lana Wachowski",
+    "keanu_reeves": "Keanu Reeves",
+    "carrie_anne_moss": "Carrie-Anne Moss",
+    "christopher_nolan": "Christopher Nolan",
+    "matthew_mcconaughey": "Matthew McConaughey",
+    "anne_hathaway": "Anne Hathaway",
+    "steven_spielberg": "Steven Spielberg",
+    "sam_neill": "Sam Neill",
+    "john_lasseter": "John Lasseter",
+    "tom_hanks": "Tom Hanks",
+    "pete_docter": "Pete Docter",
+    "ed_asner": "Ed Asner",
+    "james_cameron": "James Cameron",
+    "leonardo_dicaprio": "Leonardo DiCaprio",
+    "kate_winslet": "Kate Winslet",
+    "damien_chazelle": "Damien Chazelle",
+    "ryan_gosling": "Ryan Gosling",
+    "emma_stone": "Emma Stone",
+    "todd_phillips": "Todd Phillips",
+    "bradley_cooper": "Bradley Cooper",
+    "bong_joon_ho": "Bong Joon-ho",
+    "song_kang_ho": "Song Kang-ho",
+    "ridley_scott": "Ridley Scott",
+    "russell_crowe": "Russell Crowe",
+    "robert_zemeckis": "Robert Zemeckis",
+    "david_fincher": "David Fincher",
+    "brad_pitt": "Brad Pitt",
+    "edward_norton": "Edward Norton",
+    "jean_pierre_jeunet": "Jean-Pierre Jeunet",
+    "audrey_tautou": "Audrey Tautou"
+  },
+  "diretores": [
+    "bong_joon_ho",
+    "christopher_nolan",
+    "damien_chazelle",
+    "david_fincher",
+    "francis_coppola",
+    "james_cameron",
+    "jean_pierre_jeunet",
+    "john_lasseter",
+    "jonathan_demme",
+    "lana_wachowski",
+    "pete_docter",
+    "quentin_tarantino",
+    "ridley_scott",
+    "robert_zemeckis",
+    "stanley_kubrick",
+    "steven_spielberg",
+    "todd_phillips"
+  ],
+  "similares": [
+    [
+      "toy_story",
+      "up"
+    ],
+    [
+      "titanic",
+      "forrest_gump"
+    ],
+    [
+      "silencio_dos_inocentes",
+      "o_iluminado"
+    ],
+    [
+      "matrix",
+      "interestelar"
+    ],
+    [
+      "pulp_fiction",
+      "clube_da_luta"
+    ],
+    [
+      "poderoso_chefao",
+      "pulp_fiction"
+    ]
+  ],
+  "idade_minima": {
+    "Livre": 0,
+    "Maior12": 12,
+    "Maior16": 16,
+    "Maior18": 18
+  }
+}
