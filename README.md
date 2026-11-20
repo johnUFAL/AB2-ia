@@ -13,6 +13,7 @@ Cada questão fica em uma pasta própria (`qNN-nome`), com o código, os dados, 
 - [Questões](#questões)
 - [Como rodar cada questão](#como-rodar-cada-questão)
 - [Testes](#testes)
+- [Vídeos de teste](#vídeos-de-teste)
 - [Relação entre as questões](#relação-entre-as-questões)
 - [Observações e limitações](#observações-e-limitações)
 
@@ -349,6 +350,10 @@ python -m pytest -q q06-fuzzy\test_fuzzy_prioridade.py
 | Q14 | 18 | Regras de inferência, explicações e recomendações iguais às da Q9 |
 
 Os testes da Q9 precisam de Java instalado, por causa do HermiT.
+
+## Vídeos de teste
+
+[Acessar os vídeos de teste das atividades](https://drive.google.com/drive/folders/10fJlAHI5tzeGQvnkUlUCYc-_-mj1K1vr?usp=sharing).
 
 ## Relação entre as questões
 
